@@ -79,3 +79,13 @@
     max-width: 20rem;
   }
 }
+
+
+/* for current page active */
+
+.main-menu-3 ul li a.active::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+  background-color: #ebb741; /* optional: set the background color for ::before */
+}
