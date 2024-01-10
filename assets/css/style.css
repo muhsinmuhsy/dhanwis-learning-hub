@@ -52,10 +52,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
-  
-  overflow-x: hidden; /* Hide scrollbar */
-}
 
 body {
   font-family: "Hind", sans-serif;
@@ -63,8 +59,6 @@ body {
   font-weight: normal;
   color: #6d6e75;
   line-height: 26px;
-  
-  overflow-y: scroll; 
 }
 
 a {
