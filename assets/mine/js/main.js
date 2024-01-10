@@ -15,15 +15,16 @@
 //   }
   
 // window.addEventListener("scroll", fadeInUp);
-
-function ScrollAnimation() {
+function ScrollAnimation(event) {
+    event.preventDefault(); // Prevent default scroll behavior
+  
     var elements = document.querySelectorAll(".backInLeft, .backInRight, .fadeInUp, .flipInX, .shakeX, .zoomIn");
-
+  
     for (var i = 0; i < elements.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = elements[i].getBoundingClientRect().top;
       var elementVisible = 150;
-
+  
       if (elementTop < windowHeight - elementVisible) {
         elements[i].classList.add("active");
       } else {
@@ -31,5 +32,6 @@ function ScrollAnimation() {
       }
     }
   }
-
+  
   window.addEventListener("scroll", ScrollAnimation);
+  
