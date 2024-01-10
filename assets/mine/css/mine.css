@@ -82,10 +82,26 @@
 
 
 /* for current page active */
+/* .main-menu-3 ul li a.active {
+  background-color: #0c87ef;
+  color: #ffffff;
+} */
 
 .main-menu-3 ul li a.active::before {
   width: 100%;
   left: 0;
   right: auto;
   background-color: #ebb741; /* optional: set the background color for ::before */
+}
+
+
+.mean-container .mean-nav ul li a.active {
+  background-color: #57636d;
+  color: #ffffff; 
+  border-radius: 3px;
+}
+
+.mean-container .mean-nav ul li a{
+  display: flex;
+  justify-content: center;
 }
