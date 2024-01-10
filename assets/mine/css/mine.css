@@ -43,3 +43,28 @@
  }
 
 
+
+  
+  
+  .fadeInUp {
+    opacity: 0;
+    transform: translateY(50px); /* Initial translateY value */
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  
+
+  .fadeInUp.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
+  @keyframes zoomInAnimation {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
