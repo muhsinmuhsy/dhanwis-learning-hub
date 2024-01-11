@@ -10,7 +10,7 @@ function handleIntersection(entries, observer) {
 
   const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 
-  document.querySelectorAll('.fadeInUp').forEach(element => {
+  document.querySelectorAll('.fadeInUp, .zoomIn, .fadeRight, .fadeLeft, .flipRight, .flipLeft').forEach(element => {
     observer.observe(element);
   });
 
